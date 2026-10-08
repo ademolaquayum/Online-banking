@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f6f1">
+	<title>Northline | Your money, in motion</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="app-shell">
+		<aside class="sidebar" aria-label="Main navigation">
+			<a class="brand" href="#overview" aria-label="Northline home">
+				<span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+				<span>northline<span class="brand-period">.</span></span>
+			</a>
+
+			<div class="workspace-label">YOUR WORKSPACE</div>
+			<nav class="primary-nav">
+				<a class="nav-link is-active" href="#overview">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+					Overview
+				</a>
+				<a class="nav-link" href="#activity">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h15l-3-3M20 17H5l3 3"/><path d="M19 7a7 7 0 0 1 1 10M5 17A7 7 0 0 1 4 7"/></svg>
+					Activity
+				</a>
+				<a class="nav-link" href="./otherhtml/he.html">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h3"/></svg>
+					My cards
+					<span class="nav-count">2</span>
+				</a>
+				<a class="nav-link" href="./otherhtml/she.html">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17"/><path d="m7 15 4-4 3 2 6-7"/><path d="M16 6h4v4"/></svg>
+					Insights
+				</a>
+			</nav>
+
+			<div class="sidebar-bottom">
+				<div class="help-card">
+					<span class="help-spark" aria-hidden="true">✳</span>
+					<p>Here when you need us.</p>
+					<a href="mailto:hello@northline.example">Visit help centre <span aria-hidden="true">↗</span></a>
+				</div>
+				<button class="profile-button" type="button" aria-label="Account settings for Alex Morgan">
+					<span class="avatar">AM</span>
+					<span class="profile-copy"><strong>Alex Morgan</strong><small>Personal account</small></span>
+					<svg class="profile-more" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+				</button>
+			</div>
+		</aside>
+
+		<main class="main-content" id="overview">
+			<header class="topbar">
+				<div class="breadcrumb"><span>Personal</span><span aria-hidden="true">/</span><strong>Overview</strong></div>
+				<div class="topbar-actions">
+					<label class="search-box">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.3 4.3"/></svg>
+						<input id="transaction-search" type="search" placeholder="Search anything" aria-label="Search transactions">
+						<kbd>⌘ K</kbd>
+					</label>
+					<button class="icon-button notification-button" type="button" aria-label="Notifications">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg>
+						<span class="notification-dot"></span>
+					</button>
+					<button class="mobile-menu icon-button" type="button" aria-label="Open navigation">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+					</button>
+				</div>
+			</header>
+
+			<div class="page-content">
+				<section class="welcome-row" aria-labelledby="welcome-title">
+					<div>
+						<p class="eyebrow">WEDNESDAY, OCTOBER 8, 2026 <span class="weather-dot"></span> A good day to make a plan</p>
+						<h1 id="welcome-title">Good morning, Alex<span class="title-period">.</span></h1>
+					</div>
+					<button class="date-button" type="button">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7.5 3v4M16.5 3v4M3.5 10h17"/></svg>
+						<span>October 2026</span>
+						<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>
+					</button>
+				</section>
+
+				<section class="overview-grid" aria-label="Financial overview">
+					<article class="balance-panel">
+						<div class="balance-topline">
+							<span class="balance-label">TOTAL BALANCE <span class="balance-info" title="Across your Northline accounts">i</span></span>
+							<button class="visibility-button" type="button" aria-label="Hide balance" aria-pressed="false">
+								<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+							</button>
+						</div>
+						<div class="balance-amount" data-balance>£<span>24,</span>680<span class="balance-decimal">.50</span></div>
+						<div class="balance-change"><span class="change-pill">↑ 4.8%</span><span>up £1,130.20 this month</span></div>
+						<div class="balance-rule"></div>
+						<div class="balance-footer"><span>Monthly spending</span><strong>£2,184.36 <span>of £3,500</span></strong></div>
+						<div class="spending-track" role="img" aria-label="62 percent of monthly spending budget used"><span></span></div>
+						<div class="budget-foot"><span>£1,315.64 left to spend</span><a href="#insights">View budget <span aria-hidden="true">→</span></a></div>
+						<span class="panel-orbit orbit-one" aria-hidden="true"></span>
+						<span class="panel-orbit orbit-two" aria-hidden="true"></span>
+					</article>
+
+					<article class="accounts-panel">
+						<div class="section-heading"><div><p class="section-kicker">AT A GLANCE</p><h2>Your accounts</h2></div><button class="text-icon-button" type="button" aria-label="More account options"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button></div>
+						<a class="account-row" href="#activity">
+							<span class="account-icon current-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16M6 9v9m4-9v9m4-9v9m4-9v9M3 20h18M12 4l9 4H3l9-4Z"/></svg></span>
+							<span class="account-details"><strong>Everyday account</strong><small>•• 4829 <span class="account-status">Primary</span></small></span>
+							<strong class="account-balance" data-balance>£8,420.50</strong>
+						</a>
+						<a class="account-row" href="#activity">
+							<span class="account-icon savings-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 8.5a7 7 0 0 0-13.5 2.7A4.5 4.5 0 0 0 7 20h11a3.5 3.5 0 0 0 1-6.9"/><path d="m12 16 3-3-3-3m3 3H9"/></svg></span>
+							<span class="account-details"><strong>Rainy day saver</strong><small>•• 0901 <span class="interest-tag">4.2% AER</span></small></span>
+							<strong class="account-balance" data-balance>£16,260.00</strong>
+						</a>
+						<button class="add-account" type="button"><span>+</span> Add an account</button>
+					</article>
+				</section>
+
+				<section class="action-strip" aria-label="Quick actions">
+					<div class="action-intro"><span class="action-spark" aria-hidden="true">✳</span><span><strong>Make it happen</strong><small>Your money, your move.</small></span></div>
+					<button class="quick-action transfer-action" type="button" data-open-transfer><span class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-3-3m3 3-3 3M19 17H5l3 3m-3-3 3-3"/></svg></span><span>Send money</span><svg class="action-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+					<button class="quick-action" type="button" data-toast="Your bills are all up to date."><span class="quick-icon bills-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h12v17l-3-2-3 2-3-2-3 2v-17Z"/><path d="M9 8h6m-6 4h6"/></svg></span><span>Pay a bill</span><svg class="action-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+					<button class="quick-action" type="button" data-toast="Your card controls are ready to review."><span class="quick-icon cards-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18m-13 5h3"/></svg></span><span>Manage cards</span><svg class="action-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+				</section>
+
+				<section class="lower-grid">
+					<article class="activity-panel" id="activity">
+						<div class="section-heading activity-heading"><div><p class="section-kicker">THE LATEST</p><h2>Recent activity</h2></div><a class="view-all" href="#activity">View all <span aria-hidden="true">→</span></a></div>
+						<div class="activity-list" id="activity-list">
+							<div class="activity-date">TODAY <span>OCT 8</span></div>
+							<div class="transaction-row" data-searchable="olive bakery coffee breakfast food">
+								<span class="merchant-icon olive-icon" aria-hidden="true">o</span><span class="merchant-details"><strong>Olive & Rye</strong><small>Food & drink <span>·</span> 9:42 AM</small></span><span class="transaction-status">Completed</span><strong class="transaction-amount">−£8.40</strong>
+							</div>
+							<div class="transaction-row" data-searchable="northstar salary income work">
+								<span class="merchant-icon northstar-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 1.7 6.2L20 7l-3.2 6 6.2 2-6.2 1.8L19 23l-6-3.2-2 6.2-1.8-6.2L3 23l3.2-6-6.2-2 6.2-1.8L5 7l6 3.2L12 3Z" transform="translate(2 -2) scale(.85)"/></svg></span><span class="merchant-details"><strong>Northstar Studio</strong><small>Income <span>·</span> 8:15 AM</small></span><span class="transaction-status status-received">Received</span><strong class="transaction-amount amount-positive">+£2,850.00</strong>
+							</div>
+							<div class="activity-date">YESTERDAY <span>OCT 7</span></div>
+							<div class="transaction-row" data-searchable="metro market groceries shopping">
+								<span class="merchant-icon metro-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 9h14l-1 11H6L5 9Zm3 0a4 4 0 0 1 8 0M9 13v4m6-4v4"/></svg></span><span class="merchant-details"><strong>Metro Market</strong><small>Groceries <span>·</span> 6:28 PM</small></span><span class="transaction-status">Completed</span><strong class="transaction-amount">−£42.18</strong>
+							</div>
+							<div class="transaction-row" data-searchable="move gym fitness health">
+								<span class="merchant-icon move-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8v8m12-8v8M3 10v4m18-4v4M6 12h12"/></svg></span><span class="merchant-details"><strong>Move Studio</strong><small>Health <span>·</span> 7:10 AM</small></span><span class="transaction-status">Completed</span><strong class="transaction-amount">−£34.00</strong>
+							</div>
+						</div>
+						<div class="empty-search" hidden>No matching transactions. Try another search.</div>
+					</article>
+
+					<article class="spending-panel" id="insights">
+						<div class="section-heading"><div><p class="section-kicker">YOUR MONEY, YOUR VIEW</p><h2>Spending this week</h2></div><button class="period-select" type="button" aria-label="Spending period: This week">This week <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></button></div>
+						<div class="spending-total"><strong>£486.20</strong><span class="spending-change">↓ 12% <span>vs last week</span></span></div>
+						<div class="chart" role="img" aria-label="Bar chart of spending from Monday to Sunday">
+							<div class="chart-guides"><span>£200</span><span>£100</span><span>£0</span></div>
+							<div class="chart-bars">
+								<div class="chart-day"><span class="bar-wrap"><i style="--height: 42%"></i></span><span>M</span></div>
+								<div class="chart-day"><span class="bar-wrap"><i style="--height: 68%"></i></span><span>T</span></div>
+								<div class="chart-day is-today"><span class="bar-wrap"><i style="--height: 50%"></i></span><span>W</span></div>
+								<div class="chart-day"><span class="bar-wrap"><i style="--height: 83%"></i></span><span>T</span></div>
+								<div class="chart-day"><span class="bar-wrap"><i style="--height: 36%"></i></span><span>F</span></div>
+								<div class="chart-day"><span class="bar-wrap"><i style="--height: 74%"></i></span><span>S</span></div>
+								<div class="chart-day"><span class="bar-wrap"><i style="--height: 28%"></i></span><span>S</span></div>
+							</div>
+						</div>
+						<div class="chart-legend"><span><i></i> Daily spend</span><span>Weekly budget <strong>£700</strong></span></div>
+					</article>
+				</section>
+
+				<section class="cards-section" id="cards">
+					<div class="section-heading"><div><p class="section-kicker">IN YOUR POCKET</p><h2>Your cards</h2></div><a class="view-all" href="#cards">Manage cards <span aria-hidden="true">→</span></a></div>
+					<div class="card-preview-row">
+						<article class="bank-card bank-card-primary"><div class="bank-card-top"><span class="card-brand">northline<span>.</span></span><span class="contactless" aria-label="Contactless"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8a6 6 0 0 1 0 8m4-11a10 10 0 0 1 0 14m4-17a14 14 0 0 1 0 20"/></svg></span></div><div class="chip" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="card-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 4829</div><div class="bank-card-bottom"><span>ALEX MORGAN</span><span>VISA <small>DEBIT</small></span></div><span class="card-decoration" aria-hidden="true"></span></article>
+						<div class="card-info"><span class="card-active-indicator"><i></i> Active</span><h3>Everyday debit</h3><p>Ready for wherever the day takes you.</p><div class="card-info-row"><span>Daily spending limit</span><strong>£2,000.00</strong></div><div class="card-info-row"><span>Online payments</span><strong class="toggle-on">On <i></i></strong></div></div>
+						<button class="add-card-button" type="button" data-toast="Your new card setup is ready to begin."><span>+</span><strong>Get a new card</strong><small>Virtual or physical</small></button>
+					</div>
+				</section>
+
+				<footer class="page-footer"><span>© 2026 Northline Bank. A little more life, in every pound.</span><span><a href="#overview">Privacy</a><a href="#overview">Terms</a><span class="demo-label">DEMO ACCOUNT</span></span></footer>
+			</div>
+		</main>
+	</div>
+
+	<dialog class="transfer-dialog" aria-labelledby="transfer-title">
+		<form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close transfer form">×</button></form>
+		<span class="dialog-kicker">A LITTLE MOVEMENT</span>
+		<h2 id="transfer-title">Send money</h2>
+		<p class="dialog-copy">Move money from your Everyday account.</p>
+		<form id="transfer-form">
+			<label for="recipient">Recipient</label>
+			<input id="recipient" name="recipient" autocomplete="name" placeholder="Name or account details" required>
+			<label for="transfer-amount">Amount</label>
+			<div class="amount-input"><span>£</span><input id="transfer-amount" name="amount" type="number" min="0.01" max="8420.5" step="0.01" placeholder="0.00" required></div>
+			<button class="submit-transfer" type="submit">Review transfer <span aria-hidden="true">→</span></button>
+			<small class="demo-note">Demo only. No real money will be moved.</small>
+		</form>
+	</dialog>
+	<div class="toast" role="status" aria-live="polite"></div>
+
+	<script>
+		const toast = document.querySelector('.toast');
+		let toastTimer;
+
+		function showToast(message) {
+			toast.textContent = message;
+			toast.classList.add('is-visible');
+			clearTimeout(toastTimer);
+			toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 3000);
+		}
+
+		document.querySelector('.visibility-button').addEventListener('click', (event) => {
+			const button = event.currentTarget;
+			const hidden = button.getAttribute('aria-pressed') !== 'true';
+			button.setAttribute('aria-pressed', String(hidden));
+			button.setAttribute('aria-label', hidden ? 'Show balance' : 'Hide balance');
+			document.querySelectorAll('[data-balance]').forEach((balance) => balance.classList.toggle('is-hidden', hidden));
+		});
+
+		document.querySelectorAll('[data-toast]').forEach((button) => {
+			button.addEventListener('click', () => showToast(button.dataset.toast));
+		});
+
+		const transferDialog = document.querySelector('.transfer-dialog');
+		document.querySelector('[data-open-transfer]').addEventListener('click', () => transferDialog.showModal());
+		document.querySelector('#transfer-form').addEventListener('submit', (event) => {
+			event.preventDefault();
+			const formData = new FormData(event.currentTarget);
+			const amount = Number(formData.get('amount')).toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
+			transferDialog.close();
+			event.currentTarget.reset();
+			showToast(`Transfer of ${amount} to ${formData.get('recipient')} is ready for review.`);
+		});
+
+		document.querySelector('#transaction-search').addEventListener('input', (event) => {
+			const query = event.currentTarget.value.trim().toLowerCase();
+			const rows = [...document.querySelectorAll('.transaction-row')];
+			rows.forEach((row) => {
+				row.hidden = query.length > 0 && !row.dataset.searchable.includes(query);
+			});
+			document.querySelector('.empty-search').hidden = rows.some((row) => !row.hidden);
+		});
+
+		document.querySelectorAll('.nav-link').forEach((link) => {
+			link.addEventListener('click', () => {
+				document.querySelector('.nav-link.is-active')?.classList.remove('is-active');
+				link.classList.add('is-active');
+				document.querySelector('.sidebar').classList.remove('is-open');
+			});
+		});
+
+		document.querySelector('.mobile-menu').addEventListener('click', () => {
+			document.querySelector('.sidebar').classList.toggle('is-open');
+		});
+
+		document.querySelector('.notification-button').addEventListener('click', () => showToast('You’re all caught up.'));
+		document.querySelector('.period-select').addEventListener('click', () => showToast('Showing spending from October 5 to October 11.'));
+		document.querySelector('.add-account').addEventListener('click', () => showToast('Your new account options are ready to explore.'));
+		document.querySelector('.date-button').addEventListener('click', () => showToast('You’re viewing October 2026.'));
+	</script>
+</body>
+</html>

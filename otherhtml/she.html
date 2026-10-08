@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f6f1">
+	<title>Insights | Northline</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../othercss/she.css">
+</head>
+<body>
+	<div class="app-shell">
+		<aside class="sidebar" aria-label="Main navigation">
+			<a class="brand" href="../index.html#overview" aria-label="Northline home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>northline<span class="brand-period">.</span></span></a>
+			<div class="workspace-label">YOUR WORKSPACE</div>
+			<nav class="primary-nav">
+				<a class="nav-link" href="../index.html#overview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>Overview</a>
+				<a class="nav-link" href="../index.html#activity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h15l-3-3M20 17H5l3 3"/><path d="M19 7a7 7 0 0 1 1 10M5 17A7 7 0 0 1 4 7"/></svg>Activity</a>
+				<a class="nav-link" href="he.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h3"/></svg>My cards<span class="nav-count">2</span></a>
+				<a class="nav-link is-active" href="she.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h17"/><path d="m7 15 4-4 3 2 6-7"/><path d="M16 6h4v4"/></svg>Insights</a>
+			</nav>
+			<div class="sidebar-bottom">
+				<div class="help-card"><span class="help-spark" aria-hidden="true">✳</span><p>Here when you need us.</p><a href="mailto:hello@northline.example">Visit help centre <span aria-hidden="true">↗</span></a></div>
+				<button class="profile-button" type="button" aria-label="Account settings for Alex Morgan"><span class="avatar">AM</span><span class="profile-copy"><strong>Alex Morgan</strong><small>Personal account</small></span><svg class="profile-more" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button>
+			</div>
+		</aside>
+
+		<main class="main-content">
+			<header class="topbar">
+				<div class="breadcrumb"><a href="../index.html#overview">Personal</a><span aria-hidden="true">/</span><strong>Insights</strong></div>
+				<div class="topbar-actions"><a class="icon-button insights-home-button" href="../index.html#overview" aria-label="Back to overview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 18-6-6 6-6"/></svg></a><button class="mobile-menu icon-button" type="button" aria-label="Open navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+			</header>
+
+			<div class="page-content">
+				<section class="welcome-row insights-welcome">
+					<div><p class="eyebrow">A CLEARER PICTURE OF YOUR MONEY</p><h1>Little things add up<span class="title-period">.</span></h1></div>
+					<label class="range-picker"><span class="range-label">SHOWING</span><select id="insight-range" aria-label="Choose insight date range"><option value="month">This month</option><option value="week">This week</option><option value="quarter">Last 3 months</option></select></label>
+				</section>
+
+				<section class="insight-summary" aria-label="Spending summary">
+					<div class="summary-copy"><p class="section-kicker">TOTAL SPENT <span class="summary-period">THIS MONTH</span></p><div class="summary-total" id="summary-total">£2,184<span>.36</span></div><div class="summary-comparison"><span class="comparison-pill" id="summary-change">↓ 8.2%</span><span id="summary-caption">compared to last month</span></div></div>
+					<div class="summary-budget"><div class="budget-heading"><span>Monthly budget</span><strong id="budget-caption">£2,184 <span>of £3,500</span></strong></div><div class="insight-budget-track"><span id="budget-fill"></span></div><div class="budget-remaining" id="budget-remaining">£1,315.64 left this month</div></div>
+					<div class="summary-note"><span class="note-spark" aria-hidden="true">✳</span><span><strong>Nice bit of progress.</strong><small>You’re spending less than last month.</small></span></div>
+					<span class="summary-orbit" aria-hidden="true"></span>
+				</section>
+
+				<section class="insights-grid">
+					<article class="insight-panel trend-panel">
+						<div class="section-heading"><div><p class="section-kicker">YOUR PACE</p><h2>Spending over time</h2></div><span class="trend-caption" id="trend-caption">DAILY · OCTOBER</span></div>
+						<div class="trend-chart" role="img" aria-label="Spending trend over the selected period">
+							<div class="trend-guides"><span>£600</span><span>£400</span><span>£200</span><span>£0</span></div>
+							<div class="trend-bars" id="trend-bars">
+								<div class="trend-day"><i style="--height: 38%"></i><span>01</span></div><div class="trend-day"><i style="--height: 54%"></i><span>04</span></div><div class="trend-day"><i style="--height: 32%"></i><span>07</span></div><div class="trend-day is-current"><i style="--height: 71%"></i><span>10</span></div><div class="trend-day"><i style="--height: 47%"></i><span>13</span></div><div class="trend-day"><i style="--height: 62%"></i><span>16</span></div><div class="trend-day"><i style="--height: 40%"></i><span>19</span></div><div class="trend-day"><i style="--height: 58%"></i><span>22</span></div><div class="trend-day"><i style="--height: 29%"></i><span>25</span></div><div class="trend-day"><i style="--height: 44%"></i><span>28</span></div>
+							</div>
+						</div>
+						<div class="trend-legend"><span><i></i> Daily spending</span><span><i></i> Budget pace</span></div>
+					</article>
+
+					<article class="insight-panel category-panel">
+						<div class="section-heading"><div><p class="section-kicker">WHERE IT GOES</p><h2>Spending by category</h2></div><a class="category-link" href="../index.html#activity">Activity <span aria-hidden="true">→</span></a></div>
+						<div class="category-list">
+							<div class="category-row"><span class="category-icon food-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8m-3-8v5a3 3 0 0 0 6 0V3m-3 8v10m10-18v18m0-18c-4 3-4 8 0 9"/></svg></span><span class="category-name"><strong>Food & drink</strong><small>18 transactions</small></span><span class="category-meter"><i style="--width: 78%"></i></span><strong class="category-total">£642.80</strong></div>
+							<div class="category-row"><span class="category-icon home-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8m-16-2v12h14V9m-9 12v-7h4v7"/></svg></span><span class="category-name"><strong>Home & bills</strong><small>7 transactions</small></span><span class="category-meter"><i style="--width: 64%"></i></span><strong class="category-total">£518.00</strong></div>
+							<div class="category-row"><span class="category-icon travel-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 15 7-2 4-9 2-1 1 1-2 9 6 4-.5 1.5-8-2-4 5-1.5-.5 2-6-6-1V15Z"/></svg></span><span class="category-name"><strong>Travel</strong><small>12 transactions</small></span><span class="category-meter"><i style="--width: 45%"></i></span><strong class="category-total">£371.56</strong></div>
+							<div class="category-row"><span class="category-icon fun-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M4.5 7.5l15 9m0-9-15 9"/><circle cx="12" cy="12" r="9"/></svg></span><span class="category-name"><strong>Fun & culture</strong><small>9 transactions</small></span><span class="category-meter"><i style="--width: 31%"></i></span><strong class="category-total">£254.00</strong></div>
+							<div class="category-row"><span class="category-icon other-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></span><span class="category-name"><strong>Everything else</strong><small>11 transactions</small></span><span class="category-meter"><i style="--width: 25%"></i></span><strong class="category-total">£398.00</strong></div>
+						</div>
+					</article>
+				</section>
+
+				<section class="insights-bottom-grid">
+					<article class="insight-panel savings-panel"><div class="savings-heading"><span class="savings-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 8.5a7 7 0 0 0-13.5 2.7A4.5 4.5 0 0 0 7 20h11a3.5 3.5 0 0 0 1-6.9"/><path d="m12 16 3-3-3-3m3 3H9"/></svg></span><span><p class="section-kicker">A LITTLE SOMETHING SET ASIDE</p><h2>Your rainy day fund</h2></span></div><div class="savings-progress"><div><strong>£16,260</strong><span>of £20,000</span></div><strong class="savings-percent">81%</strong></div><div class="insight-budget-track savings-track"><span></span></div><div class="savings-foot"><span>£3,740 to your goal</span><span>At this pace, there in 5 months</span></div></article>
+					<article class="tip-panel"><span class="tip-mark" aria-hidden="true">↗</span><div><p class="section-kicker">A SMALL WIN</p><h2>Your subscriptions are £12 lower</h2><p>You’re spending less on subscriptions than you were in September. That’s a little extra for the things you love.</p></div><a href="../index.html#activity" aria-label="Review recent transactions">→</a></article>
+				</section>
+				<footer class="page-footer"><span>© 2026 Northline Bank. A little more life, in every pound.</span><span><a href="../index.html#overview">Back to overview</a><span class="demo-label">DEMO ACCOUNT</span></span></footer>
+			</div>
+		</main>
+	</div>
+	<script>
+		const insightRanges = {
+			month: { total: '£2,184.36', change: '↓ 8.2%', caption: 'compared to last month', budget: '£2,184', remaining: '£1,315.64 left this month', fill: '62%', period: 'THIS MONTH', trend: 'DAILY · OCTOBER', bars: [38, 54, 32, 71, 47, 62, 40, 58, 29, 44] },
+			week: { total: '£486.20', change: '↓ 12%', caption: 'compared to last week', budget: '£486', remaining: '£213.80 left this week', fill: '69%', period: 'THIS WEEK', trend: 'DAILY · THIS WEEK', bars: [42, 68, 50, 83, 36, 74, 28, 46, 55, 39] },
+			quarter: { total: '£6,842.90', change: '↓ 4.6%', caption: 'compared to previous 3 months', budget: '£6,842', remaining: '£1,907.10 left this quarter', fill: '78%', period: 'LAST 3 MONTHS', trend: 'WEEKLY · LAST 3 MONTHS', bars: [48, 36, 66, 54, 42, 76, 61, 39, 58, 45] }
+		};
+		document.querySelector('#insight-range').addEventListener('change', (event) => {
+			const data = insightRanges[event.currentTarget.value];
+			document.querySelector('#summary-total').innerHTML = `${data.total.slice(0, -3)}<span>${data.total.slice(-3)}</span>`;
+			document.querySelector('#summary-change').textContent = data.change;
+			document.querySelector('#summary-caption').textContent = data.caption;
+			document.querySelector('#budget-caption').innerHTML = `${data.budget} <span>of ${event.currentTarget.value === 'week' ? '£700' : event.currentTarget.value === 'quarter' ? '£8,750' : '£3,500'}</span>`;
+			document.querySelector('#budget-remaining').textContent = data.remaining;
+			document.querySelector('#budget-fill').style.width = data.fill;
+			document.querySelector('.summary-period').textContent = data.period;
+			document.querySelector('#trend-caption').textContent = data.trend;
+			document.querySelectorAll('.trend-day i').forEach((bar, index) => bar.style.setProperty('--height', `${data.bars[index]}%`));
+		});
+		document.querySelector('.mobile-menu').addEventListener('click', () => document.querySelector('.sidebar').classList.toggle('is-open'));
+	</script>
+</body>
+</html>

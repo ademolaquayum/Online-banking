@@ -1,0 +1,85 @@
+.cards-welcome { align-items: center; }
+.new-card-button { display: flex; height: 36px; align-items: center; gap: 8px; padding: 0 12px; border: 0; border-radius: 4px; background: var(--green); color: #fff; font-size: 10px; font-weight: 600; cursor: pointer; }
+.new-card-button:hover { background: var(--green-dark); }
+.new-card-button span { font-size: 15px; font-weight: 400; }
+.card-account-strip { display: flex; min-height: 66px; align-items: center; justify-content: space-between; padding: 0 17px; border: 1px solid #e9ece5; border-radius: 5px; background: #fff; }
+.card-account-strip > div:first-child { display: flex; align-items: center; gap: 10px; }
+.card-strip-icon { display: grid; width: 31px; height: 31px; place-items: center; border-radius: 4px; background: #edf2e5; color: #63824f; }
+.card-strip-icon svg { width: 16px; height: 16px; }
+.card-account-strip > div:first-child > span:last-child, .strip-balance { display: grid; gap: 4px; }
+.card-account-strip small { color: #929e95; font-size: 7px; font-weight: 700; letter-spacing: .65px; }
+.card-account-strip strong { font-size: 10px; font-weight: 600; }
+.card-account-strip strong span { margin-left: 4px; color: #9ba49d; font-size: 9px; font-weight: 400; }
+.strip-balance { justify-items: end; }
+.strip-balance strong { font-family: var(--display); font-size: 13px; }
+.managed-cards-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; margin-top: 14px; }
+.managed-card-panel, .virtual-card-panel, .card-activity-panel { min-width: 0; padding: 17px 19px; border: 1px solid #e9ece5; border-radius: 5px; background: #fff; }
+.managed-card-panel, .virtual-card-panel { min-height: 321px; }
+.managed-card-panel .section-heading, .virtual-card-panel .section-heading { margin-bottom: 12px; }
+.card-state { display: flex; align-items: center; gap: 5px; color: #698653; font-size: 8px; font-weight: 600; }
+.card-state i { width: 6px; height: 6px; border-radius: 50%; background: #91b36c; }
+.card-state.is-frozen { color: #ac7958; }
+.card-state.is-frozen i { background: #d79a72; }
+.managed-card-art { display: grid; min-height: 162px; place-items: center; overflow: hidden; border-radius: 4px; background: #f6f7f2; }
+.managed-card-art .bank-card { width: min(100% - 34px, 275px); height: 152px; padding: 15px 18px 12px; }
+.managed-card-art .chip { margin-top: 16px; }
+.managed-card-art .card-number { margin-top: 11px; font-size: 9px; }
+.managed-card-art .bank-card-bottom { margin-top: 11px; }
+.bank-card.is-frozen { filter: saturate(.35); opacity: .7; }
+.managed-card-details { display: grid; grid-template-columns: 1.3fr 1fr .7fr; margin-top: 13px; }
+.managed-card-details > div { display: grid; gap: 4px; padding-right: 8px; }
+.managed-card-details > div + div { padding-left: 10px; border-left: 1px solid #edf0ea; }
+.managed-card-details span { color: #949e96; font-size: 8px; }
+.managed-card-details strong { color: #4c5c51; font-size: 9px; font-weight: 600; }
+.card-controls { display: flex; gap: 8px; margin-top: 14px; padding-top: 12px; border-top: 1px solid #eff1ed; }
+.card-controls button { display: inline-flex; height: 30px; align-items: center; justify-content: center; gap: 6px; padding: 0 9px; border: 1px solid #e5e9e1; border-radius: 3px; background: #fff; color: #59685f; font-size: 8px; font-weight: 600; cursor: pointer; }
+.card-controls button:hover { background: #f6f8f2; }
+.card-controls button svg { width: 13px; height: 13px; }
+.freeze-button[aria-pressed="true"] { border-color: #efd9c9; background: #fbf2ec; color: #986749; }
+.virtual-badge { padding: 4px 6px; border-radius: 3px; background: #edf3e8; color: #728858; font-size: 7px; font-weight: 700; letter-spacing: .35px; }
+.virtual-card-art { min-height: 162px; padding: 17px; border: 1px solid #e8eae3; border-radius: 4px; background: linear-gradient(140deg, #f2eee4, #e4e9db); color: #44574a; }
+.virtual-card-top, .virtual-card-bottom { display: flex; align-items: center; justify-content: space-between; }
+.virtual-card-top .card-brand { font-size: 12px; }
+.virtual-symbol { color: #8da470; font-size: 18px; }
+.virtual-card-chip { display: grid; width: 23px; height: 18px; grid-template-columns: 1fr 1fr; margin-top: 18px; overflow: hidden; border: 1px solid rgba(48,77,54,.38); border-radius: 3px; }
+.virtual-card-chip span { border: .5px solid rgba(48,77,54,.28); }
+.virtual-card-number { margin-top: 12px; font-family: var(--display); font-size: 9px; font-weight: 600; letter-spacing: .6px; }
+.virtual-card-bottom { margin-top: 12px; font-size: 7px; font-weight: 700; }
+.virtual-card-bottom > span:last-child { font-family: var(--display); font-size: 12px; font-style: italic; }
+.virtual-card-bottom small { display: block; font-family: var(--sans); font-size: 5px; font-style: normal; letter-spacing: .7px; text-align: right; }
+.virtual-description { margin: 12px 0 9px; color: #89958c; font-size: 9px; line-height: 1.5; }
+.virtual-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 10px 0 0; border: 0; border-top: 1px solid #eff1ed; background: transparent; text-align: left; cursor: pointer; }
+.virtual-toggle > span { display: grid; gap: 3px; }
+.virtual-toggle strong { color: #47584e; font-size: 9px; font-weight: 600; }
+.virtual-toggle small { color: #99a39b; font-size: 8px; }
+.virtual-toggle > i { position: relative; width: 28px; height: 16px; border-radius: 10px; background: #d1d8d0; transition: background .18s; }
+.virtual-toggle > i::after { position: absolute; top: 3px; left: 3px; width: 10px; height: 10px; border-radius: 50%; background: #fff; content: ''; transition: transform .18s; }
+.virtual-toggle[aria-pressed="true"] > i { background: #8faa70; }
+.virtual-toggle[aria-pressed="true"] > i::after { transform: translateX(12px); }
+.card-activity-panel { margin-top: 14px; }
+.card-activity-panel .section-heading { margin-bottom: 6px; }
+.card-activity-row { display: flex; min-height: 51px; align-items: center; gap: 9px; border-bottom: 1px solid #f0f1ed; }
+.card-activity-row:last-child { border-bottom: 0; }
+.card-activity-row .merchant-details { flex: 1; }
+.card-activity-type { color: #9aa39c; font-size: 8px; }
+.card-activity-row .transaction-amount { margin-left: 8px; }
+.cards-welcome h1 { font-size: 24px; }
+.cards-welcome .eyebrow { margin-bottom: 6px; }
+
+@media (max-width: 760px) {
+	.cards-welcome { align-items: flex-start; }
+	.managed-cards-grid { grid-template-columns: 1fr; }
+	.managed-card-panel, .virtual-card-panel { min-height: auto; }
+	.card-account-strip { min-height: 62px; padding: 0 12px; }
+}
+
+@media (max-width: 430px) {
+	.cards-welcome { gap: 12px; }
+	.cards-welcome h1 { font-size: 21px; }
+	.new-card-button { height: 32px; font-size: 9px; }
+	.card-account-strip small { font-size: 6px; }
+	.card-account-strip strong { font-size: 9px; }
+	.managed-card-panel, .virtual-card-panel, .card-activity-panel { padding-right: 13px; padding-left: 13px; }
+	.managed-card-details span { font-size: 7px; }
+	.card-activity-type { display: none; }
+}
